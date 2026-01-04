@@ -30,8 +30,8 @@ pipeline {
             steps {
                 sh '''
                 ls -la
-                if [ -f /build/index.html ]; then
-                    echo "index.yaml found"
+                if [ -f build/index.html ]; then
+                    echo "index.html found"
                 else
                     echo "ERROR: index.html missing"
                     exit 1
